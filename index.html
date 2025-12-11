@@ -1,4 +1,46 @@
 <!DOCTYPE html>
-<html>
-    <!--Put your code here-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Low price products with "great" quality</h1>
+    </header>
+    <main>
+        <section id="items">
+            <h2>Items</h2>
+            <div class="item" data-name="Laptop" data-price="1000">
+                <img src="https://picsum.photos/150/150?random=1" alt="Laptop">
+                <h3>Laptop</h3>
+                <p>$1000</p>
+                <button class="add-btn">Add</button>
+            </div>
+            <div class="item" data-name="Phone" data-price="500">
+                <img src="https://picsum.photos/150/150?random=2" alt="Phone">
+                <h3>Phone</h3>
+                <p>$500</p>
+                <button class="add-btn">Add</button>
+            </div>
+            <div class="item" data-name="Headphones" data-price="100">
+                <img src="https://picsum.photos/150/150?random=3" alt="Headphones">
+                <h3>Headphones</h3>
+                <p>$100</p>
+                <button class="add-btn">Add</button>
+            </div>
+        </section>
+        <section id="cart">
+            <h2>Shopping Cart</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: $<span id="total">0</span></p>
+        </section>
+    </main>
+    <footer>
+        <p>Visit <a href="https://www.amazon.com" target="_blank">Amazon</a> for more products.</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
 </html>
